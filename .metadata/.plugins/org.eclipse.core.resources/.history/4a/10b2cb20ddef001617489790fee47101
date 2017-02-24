@@ -1,0 +1,46 @@
+/*
+ * COMP2080 Lab Test 1
+ * Author: Brendan Bernas - 101012650
+ */
+package driver;
+
+import llclass.*;
+
+public class LabTestProblem1B {
+
+	public static void main(String[] args) {
+		
+		//Code to generate linked list of structure 2,5,3
+		System.out.println("Generating Linked List");
+		LinkedList<Integer> l = new LinkedList<Integer>(2);
+		l.setNext(new LinkedList<Integer>(3));
+		l.getNext().setNext(new LinkedList<Integer>(5));
+		
+
+		System.out.println("Displaying contents of linked list");
+		LinkedList<Integer> currNode = l;
+		while(currNode.getNext() != null)
+		{
+			System.out.println(currNode.getInfo());
+			currNode = currNode.getNext();
+		}
+		System.out.println(currNode.getInfo());
+		
+		System.out.println("Generating Linked List");
+		LinkedList2<Integer> m = new LinkedList2<Integer>(6);
+		m.setNext(new LinkedList2<Integer>(1));
+		m.setNext(new LinkedList2<Integer>(8));
+		m.getNext().setNext(new LinkedList2<Integer>(9));
+		
+
+		System.out.println("Displaying contents of linked list");
+		LinkedList2<Integer> currNode1 = m;
+		while(currNode1.getNext() != null)
+		{
+			System.out.println(currNode1.getInfo());
+			currNode1 = currNode1.getNext();
+		}
+		System.out.println(currNode1.getInfo());
+	}
+
+}

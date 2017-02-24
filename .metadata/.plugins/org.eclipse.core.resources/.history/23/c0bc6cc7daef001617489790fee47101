@@ -1,0 +1,74 @@
+/*
+ * COMP2080 Lab Test 1
+ * Author: Brendan Bernas - 101012650
+ */
+package llclass;
+
+public class LinkedList<T> {
+    private T info;
+    private LinkedList<T> next;
+    
+    public LinkedList(T info) {
+    	this.info = info;
+    	this.next = null;
+    }
+    
+	public T getInfo() {
+		return info;
+	}
+	public void setInfo(T info) {
+		this.info = info;
+	}
+	public LinkedList<T> getNext() {
+		return next;
+	}
+	public void setNext(LinkedList<T> next) {
+		this.next = next;
+	}
+	public LinkedList<T> insert(LinkedList<T> node) {
+		node.next = this;
+		return node;
+	}
+//	public void swap(int indexToSwap)
+//	{
+//		//start current node at beginning of linked list
+//		//transverse to the index to swap at
+//		LinkedList<T> prevNode = this;
+//		for(int i = 0; i < indexToSwap ; i++)
+//		{
+//			prevNode = prevNode.getNext();
+//		}
+//		LinkedList<T> currNode = prevNode.getNext();
+//		
+//		
+//		//changing the prev node link to next node
+//		//changing next node link to curr node
+//		LinkedList<T>nextCurr = currNode.getNext();
+//		prevNode.setNext(nextCurr);
+//		nextCurr.setNext(currNode);
+//		
+//		LinkedList<T>nextNextNode = nextCurr.getNext();
+//		
+//		
+//		currNode.setNext(nextNextNode);
+//		
+//		
+//	}
+//	
+//	public void smartSwap(int indexToSwitch)
+//	{
+//		//get the node at right index
+//		//get the node after curr node
+//		LinkedList<T> currNode = this;
+//		for(int i = 0; i < indexToSwitch; i++)
+//		{
+//			currNode = currNode.getNext();
+//		}
+//		
+//		LinkedList<T> nextNode = currNode.getNext();
+//		T currInfo = currNode.getInfo();
+//		currNode.setInfo(nextNode.getInfo());
+//		nextNode.setInfo(currInfo);
+//	}
+	
+}

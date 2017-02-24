@@ -1,0 +1,14 @@
+package stacks;
+
+public class TestPalindromeChecker {
+
+	public static void main(String[] args) {
+		String palindromeOne = new String("kayeak");
+		
+		PalindromeChecker palindromeChecker = 
+				new PalindromeChecker(palindromeOne);
+		
+		System.out.println(palindromeChecker.isPalindrome())
+;	}
+
+}

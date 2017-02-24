@@ -1,0 +1,14 @@
+package stacks;
+
+public class TestPalindromeChecker {
+
+	public static void main(String[] args) {
+		String palindromeOne = new String("tacocat , dad");
+		
+		PalindromeChecker palindromeChecker = 
+				new PalindromeChecker(palindromeOne);
+		
+		System.out.println(palindromeOne + " is " + palindromeChecker.isPalindrome());
+;	}
+
+}

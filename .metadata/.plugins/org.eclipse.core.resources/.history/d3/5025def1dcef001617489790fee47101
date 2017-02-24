@@ -1,0 +1,32 @@
+/*
+ * COMP2080 Lab Test 1
+ * Author: Brendan Bernas - 101012650
+ */
+package llclass;
+
+public class LinkedList<L> {
+    private L info;
+    private LinkedList<L> next;
+    
+    public LinkedList(L info) {
+    	this.info = info;
+    	this.next = null;
+    }
+    
+	public L getInfo() {
+		return info;
+	}
+	public void setInfo(L info) {
+		this.info = info;
+	}
+	public LinkedList<L> getNext() {
+		return next;
+	}
+	public void setNext(LinkedList<L> next) {
+		this.next = next;
+	}
+	public LinkedList<L> insert(LinkedList<L> node) {
+		node.next = this;
+		return node;
+	}
+}

@@ -1,0 +1,22 @@
+package driver;
+
+import llclass.LinkedList.*;
+
+public class LabTestProblem1A {
+	public static void main(String[] args) {
+		System.out.println("Generating Linked List");
+		LinkedList<Integer> l = new LinkedList<Integer>(2);
+		l.setNext(new LinkedList<Integer>(3));
+		l.getNext().setNext(new LinkedList<Integer>(5));
+		
+
+		System.out.println("Displaying contents of linked list");
+		LinkedList<Integer> currNode = l;
+		while(currNode.getNext() != null)
+		{
+			System.out.println(currNode.getInfo());
+			currNode = currNode.getNext();
+		}
+		System.out.println(currNode.getInfo());
+	}
+}

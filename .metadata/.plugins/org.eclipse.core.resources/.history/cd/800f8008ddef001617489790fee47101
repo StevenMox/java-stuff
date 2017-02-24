@@ -1,0 +1,28 @@
+package linkedlists;
+
+public class ll {
+	private T info;
+    private LinkedList<T> next;
+    
+    public LinkedList(T info) {
+    	this.info = info;
+    	this.next = null;
+    }
+    
+	public T getInfo() {
+		return info;
+	}
+	public void setInfo(T info) {
+		this.info = info;
+	}
+	public LinkedList<T> getNext() {
+		return next;
+	}
+	public void setNext(LinkedList<T> next) {
+		this.next = next;
+	}
+	public LinkedList<T> insert(LinkedList<T> node) {
+		node.next = this;
+		return node;
+	}
+}

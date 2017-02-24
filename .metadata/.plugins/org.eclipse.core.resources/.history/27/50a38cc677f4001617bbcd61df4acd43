@@ -1,0 +1,30 @@
+package stacks;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class TestPalindromeChecker {
+
+	public static void main(String[] args) {
+//		String palindromeOne = new String("tacocat");
+//		String palindromeTwo = new String("dada");
+//		
+//		PalindromeChecker palindromeChecker = 
+//				new PalindromeChecker(palindromeOne);
+//		
+//		PalindromeChecker palindromeChecker2 = 
+//				new PalindromeChecker(palindromeTwo);
+//		
+//		System.out.println(palindromeOne + " is " + palindromeChecker.isPalindrome());
+//		System.out.println(palindromeTwo + " is " + palindromeChecker2.isPalindrome());
+        System.out.println(System.getProperty("/Users/MacBitch/Documents/workspace/assignment1"));
+        File file = new File("/Users/MacBitch/Documents/workspace/assignment1/src/stacks/file.txt");
+        try {
+            Scanner scanner = new Scanner(file);
+        } catch (Exception e) {
+        System.out.println(e);
+        }
+	
+	}
+
+}
